@@ -1,0 +1,224 @@
+.pain-solution-section {
+    background: #09060f;
+    color: #fff;
+    padding: 120px 24px 260px;
+    /* Increased bottom padding to prevent card cropping */
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    /* ScrollStack handles height via content now */
+}
+
+.pain-solution__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pain-solution__header {
+    text-align: center;
+    margin-bottom: 0px;
+    /* Reduced margin since ScrollStack has padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: sticky;
+    top: 30px;
+    /* Reset to 80px to align better with Navbar */
+    z-index: 10;
+    pointer-events: none;
+    /* Let clicks pass through if needed */
+    mix-blend-mode: difference;
+    /* Optional: ensures visibility? No, might look weird. */
+}
+
+/* Override TrueFocus styles to center it */
+.pain-solution__header .focus-container {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    justify-content: center;
+}
+
+.pain-solution__subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+/* Stack Wrapper Overrides */
+.pain-solution__stack-wrapper {
+    position: relative;
+    /* Removed fixed height 200vh */
+}
+
+.pain-solution__stack-wrapper .scroll-stack-scroller {
+    overflow: visible;
+    /* Fix double scrollbar */
+    height: auto;
+}
+
+.pain-solution__stack-wrapper .scroll-stack-inner {
+    padding-top: 5vh !important;
+    padding-bottom: 10vh !important;
+    /* Increased to ensure enough scroll track for stacking */
+    min-height: auto !important;
+}
+
+/* Card Styling */
+.pain-solution-card {
+    background: linear-gradient(145deg, #1a1523 0%, #0d0a12 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+    /* Increased from 600px */
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    /* Override ScrollStack fixed height */
+    height: auto !important;
+    min-height: 25rem;
+    /* Increased min-height */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 16px;
+}
+
+.card-step {
+    font-family: var(--font-geist-mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.card-badges {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.badge-pain {
+    background: rgba(248, 113, 113, 0.1);
+    color: #f87171;
+}
+
+.badge-solution {
+    background: rgba(74, 222, 128, 0.1);
+    color: #4ade80;
+}
+
+.badge-arrow {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pain-row,
+.solution-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.pain-icon {
+    color: #f87171;
+}
+
+.solution-icon {
+    color: #4ade80;
+}
+
+.pain-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+    text-decoration-color: rgba(248, 113, 113, 0.5);
+}
+
+.solution-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: inherit;
+    /* Allow GradientText to control color */
+}
+
+.card-description {
+    margin-top: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .pain-solution-section {
+        padding: 100px 16px 190px;
+    }
+
+    .pain-solution__header .focus-container {
+        font-size: 2.5rem !important;
+        /* Force smaller size */
+    }
+
+    /* Important: Override ScrollStack inner padding which is 5rem by default */
+    .pain-solution__stack-wrapper .scroll-stack-inner {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .pain-solution-card {
+        padding: 24px;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .card-header {
+        margin-bottom: 20px;
+    }
+
+    .card-step {
+        font-size: 1.25rem;
+    }
+
+    .pain-text {
+        font-size: 1rem;
+    }
+
+    .solution-text {
+        font-size: 1.25rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+    }
+}

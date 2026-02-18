@@ -1,0 +1,111 @@
+.core-services {
+    background: #000;
+    color: #fff;
+    padding: 80px 24px 120px;
+    position: relative;
+    z-index: 5;
+    cursor: none !important;
+    /* Force hide default cursor */
+}
+
+/* Ensure children also hide cursor */
+.core-services * {
+    cursor: none !important;
+}
+
+.core-services__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.core-services__header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.core-services__title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #f0edf5;
+}
+
+.core-services__subtitle {
+    font-size: 1.1rem;
+    color: rgba(240, 237, 245, 0.6);
+    max-width: 600px;
+}
+
+.core-services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    border: 2px dotted rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    text-decoration: none;
+    min-height: 220px;
+}
+
+.service-card:hover {
+    border-color: rgba(255, 159, 252, 0.4);
+    transform: translateY(-4px);
+}
+
+.service-card__content {
+    position: relative;
+    z-index: 2;
+}
+
+.service-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.service-card__desc {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
+
+.service-card__icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.service-card:hover .service-card__icon {
+    color: #FF9FFC;
+    transform: translate(4px, -4px);
+}
+
+.service-card__bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(255, 159, 252, 0.1),
+            transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.service-card:hover .service-card__bg {
+    opacity: 1;
+}
