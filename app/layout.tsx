@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "lenis/dist/lenis.css"; // Import Lenis CSS
@@ -86,6 +87,19 @@ export default function RootLayout({
       <body
         className={`${jakarta.variable} ${outfit.variable} antialiased font-sans`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HESDQ347JK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HESDQ347JK');
+          `}
+        </Script>
         <BookingProvider>
           <SmoothScroll />
           <Navbar />
