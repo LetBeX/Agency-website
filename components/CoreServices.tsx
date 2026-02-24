@@ -13,8 +13,8 @@ const services = [
     description: "Functionality and speed, perfectly coded.",
   },
   {
-    title: "Branding",
-    description: "Identity that speaks to your audience.",
+    title: "Landing Pages",
+    description: "High-converting single pages tailored for your campaigns.",
   },
   {
     title: "Website Maintenance",

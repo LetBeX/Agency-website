@@ -14,12 +14,12 @@ const featuredProjects: BentoCardProps[] = [
     url: "https://cafeshow.vercel.app/"
   },
   {
-    title: "CenterX Blog",
-    description: "High-performance blogging platform with seamless CMS integration.",
-    label: "Platform",
-    img: "/centerx.vercel.app_profile_.png",
+    title: "Travel Explorer",
+    description: "Immersive landing page for a boutique travel agency. 3x increase in lead generation.",
+    label: "Landing Page",
+    img: "/travel.png",
     color: "#0a0a0a",
-    url: "https://centerx.vercel.app/"
+    url: "#"
   },
   {
     title: "YeuLink Landing",
