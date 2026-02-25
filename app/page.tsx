@@ -39,10 +39,10 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Agency",
-            "name": "LetBeX",
+            "name": "Letbex",
             "url": "https://letbex.com",
             "logo": "https://letbex.com/icon.png", // Assuming icon exists, or use a specific logo URL
-            "description": "We help businesses make more revenue with strategy-led websites.",
+            "description": "Letbex is a leading ROI-driven web design and development agency focused on enhancing your online presence and increasing revenue.",
             "address": {
               "@type": "PostalAddress",
               "addressCountry": "IN" // Modify as needed

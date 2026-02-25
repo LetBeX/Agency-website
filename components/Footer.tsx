@@ -22,7 +22,6 @@ export default function Footer() {
             <h3 className="footer-column-title">Explore</h3>
             <a href="#work" className="footer-link">Our Work</a>
             <a href="#about" className="footer-link">About Us</a>
-            <a href="#" className="footer-link">Shop</a>
             <a href="#contact" className="footer-link">Reach Out</a>
           </div>
 

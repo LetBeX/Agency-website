@@ -31,14 +31,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://letbex.com"),
   title: {
-    default: "LetBeX | ROI-Driven Web Design & Development",
-    template: "%s | LetBeX",
+    default: "Letbex | ROI-Driven Web Design & Development",
+    template: "%s | Letbex",
   },
-  description: "We help businesses make more revenue with strategy-led websites. Expert web design, development, and branding agency focused on ROI.",
-  keywords: ["web design agency", "ROI-driven web design", "Next.js developers", "branding agency", "conversion optimization", "LetBeX"],
-  authors: [{ name: "LetBeX Team" }],
-  creator: "LetBeX",
-  publisher: "LetBeX",
+  description: "Letbex is a leading ROI-driven web design and development agency dedicated to empowering businesses to significantly increase their revenue with revenue-generating websites.",
+  keywords: ["Letbex", "ROI-driven web design", "web development agency", "revenue-generating websites", "high-converting landing pages", "Next.js developers", "UI/UX design", "conversion optimization"],
+  authors: [{ name: "Letbex Team" }],
+  creator: "Letbex",
+  publisher: "Letbex",
   robots: {
     index: true,
     follow: true,
@@ -57,22 +57,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://letbex.com",
-    title: "LetBeX | ROI-Driven Web Design & Development",
-    description: "We engineer digital experiences that turn visitors into customers. Premium web design & development.",
-    siteName: "LetBeX",
+    title: "Letbex: ROI-Driven Web Design & Development for Enhanced Online Presence",
+    description: "Partner with Letbex for expert website design, robust web development, and high-converting marketing assets that drive tangible business outcomes.",
+    siteName: "Letbex",
     images: [
       {
         url: "/opengraph-image.png", // We will need to ensure this exists or use a default one
         width: 1200,
         height: 630,
-        alt: "LetBeX Agency - ROI Driven Web Design",
+        alt: "Letbex Agency - ROI Driven Web Design",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LetBeX | ROI-Driven Web Design & Development",
-    description: "We help businesses make more revenue with strategy-led websites.",
+    title: "Letbex | ROI-Driven Web Design & Development",
+    description: "Partner with Letbex for expert website design, robust web development, and high-converting marketing assets.",
     creator: "@letbex", 
   },
 };
