@@ -19,7 +19,7 @@ const featuredProjects: BentoCardProps[] = [
     label: "Landing Page",
     img: "/travel.png",
     color: "#0a0a0a",
-    url: "#"
+    url: "https://traveling-agency-one.vercel.app/"
   },
   {
     title: "YeuLink Landing",
@@ -30,20 +30,20 @@ const featuredProjects: BentoCardProps[] = [
     url: "https://yeulink.vercel.app/"
   },
   {
-    title: "Plumber Show",
-    description: "Local service website dominating search results in 3 regions.",
-    label: "Local Business",
-    img: "/plumbershow.vercel.app_.png",
-    color: "#0a0a0a",
-    url: "https://plumbershow.vercel.app/"
-  },
-  {
-    title: "Pi Ecommerce",
+    title: "Royal Touch",
     description: "Conversion-optimized product page with 98% SEO score.",
     label: "Ecommerce",
-    img: "/ecommerceshow-pi.vercel.app_.png",
+    img: "/royal-touch-pi.vercel.app_.png",
     color: "#0a0a0a",
-    url: "https://ecommerceshow-pi.vercel.app/"
+    url: "https://royal-touch-pi.vercel.app/"
+  },
+  {
+    title: "Western Canopy",
+    description: "Local service website dominating search results in 3 regions.",
+    label: "Local Business",
+    img: "/western-canopy.vercel.app_.png",
+    color: "#0a0a0a",
+    url: "https://western-canopy.vercel.app/"
   },
   {
     title: "Salon Omega",
